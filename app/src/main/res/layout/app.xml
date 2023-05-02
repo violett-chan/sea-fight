@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="4x"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="3x"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="2x"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship4"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:contentDescription="4"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship1"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="84dp"
+        android:contentDescription="3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship2"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="84dp"
+        android:contentDescription="3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="184dp"
+        android:contentDescription="1"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="184dp"
+        android:contentDescription="1"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="184dp"
+        android:contentDescription="1"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="184dp"
+        android:contentDescription="1"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship5"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="136dp"
+        android:contentDescription="2"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship6"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="136dp"
+        android:contentDescription="2"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="136dp"
+        android:contentDescription="2"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.GridView
+        android:id="@+id/gridView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fightButton"
+        style="@style/MyButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Fight"
+        android:text="В бой!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gridView"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Разместите корабли"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="1x"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/MyButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="random"
+        android:text="Random"
+        app:layout_constraintBottom_toTopOf="@+id/fightButton"
+        app:layout_constraintEnd_toEndOf="@+id/fightButton"
+        app:layout_constraintStart_toStartOf="@+id/fightButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

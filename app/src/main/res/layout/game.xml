@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship12"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="2"
+        app:layout_constraintBottom_toTopOf="@+id/ship11"
+        app:layout_constraintStart_toStartOf="@+id/ship11"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="4"
+        app:layout_constraintBottom_toBottomOf="@+id/russianGridView"
+        app:layout_constraintStart_toEndOf="@+id/russianGridView"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship11"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="3"
+        app:layout_constraintBottom_toTopOf="@+id/ship"
+        app:layout_constraintStart_toStartOf="@+id/ship"
+        app:srcCompat="@drawable/button_border" />
+
+    <com.violet.course.DragImageView
+        android:id="@+id/ship13"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="1"
+        app:layout_constraintBottom_toTopOf="@+id/ship12"
+        app:layout_constraintStart_toStartOf="@+id/ship12"
+        app:srcCompat="@drawable/button_border" />
+
+    <ImageView
+        android:id="@+id/memeImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/ship13"
+        app:layout_constraintEnd_toStartOf="@+id/hoholGridView"
+        app:layout_constraintStart_toEndOf="@+id/russianGridView"
+        app:layout_constraintTop_toBottomOf="@+id/gameStatusTextView" />
+
+    <com.violet.course.GridView
+        android:id="@+id/hoholGridView"
+        android:layout_width="282dp"
+        android:layout_height="282dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.violet.course.GridView
+        android:id="@+id/russianGridView"
+        android:layout_width="282dp"
+        android:layout_height="282dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/gameStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/hoholGridView"
+        app:layout_constraintStart_toEndOf="@+id/russianGridView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/left4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="x1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ship"
+        app:layout_constraintEnd_toStartOf="@+id/hoholGridView"
+        app:layout_constraintTop_toTopOf="@+id/ship" />
+
+    <TextView
+        android:id="@+id/left3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="x2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ship11"
+        app:layout_constraintEnd_toStartOf="@+id/hoholGridView"
+        app:layout_constraintTop_toTopOf="@+id/ship11" />
+
+    <TextView
+        android:id="@+id/left2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="x3"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ship12"
+        app:layout_constraintEnd_toStartOf="@+id/hoholGridView"
+        app:layout_constraintTop_toTopOf="@+id/ship12" />
+
+    <TextView
+        android:id="@+id/left1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="x4"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ship13"
+        app:layout_constraintEnd_toStartOf="@+id/hoholGridView"
+        app:layout_constraintTop_toTopOf="@+id/ship13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
